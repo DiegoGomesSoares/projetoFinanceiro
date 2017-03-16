@@ -145,6 +145,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Entidades\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
