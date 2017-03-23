@@ -15,6 +15,6 @@ namespace Financas.Entidades
         //foreingkey property 
         public int UsuarioId { get; set; }
         //navigation property
-        public Usuario Usuario { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }

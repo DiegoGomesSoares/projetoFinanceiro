@@ -3,7 +3,22 @@
         <ul class="nav nav-tabs">
             <li>@Html.ActionLink("Home","Index","Home")</li>
             <li>@Html.ActionLink("Usuarios", "Index", "Usuario")</li>
-            <li>@Html.ActionLink("Movimentacoes", "Index", "Movimentacoes")</li>
+            <li>@Html.ActionLink("Movimentacoes", "Index", "Movimentacao")</li>
+
+            @*formas de ver se usuario está autenticado
+            @if(User.Identity.IsAuthenticated )
+                Ou
+            @if(WebSecurity.IsAuthenticated)*@      
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li>@Html.ActionLink("Logout", "Logout", "Login")</li>
+            }
+            else
+            {
+                <li>@Html.ActionLink("Autenticar", "Index", "Login")</li>
+            }
+           
+            
         </ul>
     </div>
 </nav>

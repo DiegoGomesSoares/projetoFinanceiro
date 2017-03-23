@@ -1,0 +1,28 @@
+﻿@model Financas.Models.Login
+
+@using (Html.BeginForm("Autentica", "login", FormMethod.Post))
+{
+    @Html.ValidationMessage("login.Invalido")
+
+    @Html.LabelFor(u => u.login, "Login:")
+    @Html.TextBoxFor(u => u.login, new { @class = "form-control" })
+    @Html.ValidationMessageFor(u => u.login)
+
+    @Html.LabelFor(u => u.senha, "Senha:")
+    @Html.TextBoxFor(u => u.senha, new { @class = "form-control" })
+    @Html.ValidationMessageFor(u => u.senha)
+
+    <input type="submit" value="Autenticar" />
+}
+@*<form action="@Url.Action("Autentica")" method="post">
+   
+
+    <label for="login"> Login:</label>
+    <input id="login" name="login" type="text" class="form-control" />
+
+    <label for="senha"> Senha:</label>
+    <input id="senha" name="senha" type="text" class="form-control" />
+
+   
+
+</form>*@
