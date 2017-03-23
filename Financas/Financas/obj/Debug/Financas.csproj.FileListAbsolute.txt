@@ -48,6 +48,7 @@ C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projeto
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\bin\Ninject.xml
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\bin\Ninject.Web.Common.xml
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\bin\Ninject.Web.Mvc.xml
+C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\bin\WebMatrix.Data.xml
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\bin\WebMatrix.WebData.xml
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\bin\System.Web.Razor.xml
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\bin\System.Web.Webpages.xml
@@ -59,5 +60,3 @@ C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projeto
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\obj\Debug\Financas.csproj.GenerateResource.Cache
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\obj\Debug\Financas.dll
 C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\obj\Debug\Financas.pdb
-C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\bin\WebMatrix.Data.xml
-C:\Users\Diego\Documents\Visual Studio 2015\Projects\aspnet\EstudoAspNet\projetoFinanceiro2\Financas\Financas\obj\Debug\Financas.csprojResolveAssemblyReference.cache

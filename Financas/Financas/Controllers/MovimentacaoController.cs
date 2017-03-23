@@ -1,5 +1,6 @@
 ﻿using Financas.DAO;
 using Financas.Entidades;
+using Financas.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,20 @@ namespace Financas.Controllers
         {
             IList<Movimentacao> movimentacoes = movimentacaoDAO.Lista();
             return View(movimentacoes);
+        }
+
+        public ActionResult MovimentacoesPorUsuario(MovimentacoesPorUsuarioModel model)
+        {
+            model.Usuarios = usuarioDAO.Lista();
+            model.Movimentacoes = movimentacaoDAO.BuscaporUsuario(model.UsuarioId);
+            return View(model);
+        }
+
+        public ActionResult Busca(BuscaMovimendacoesModel model)
+        {
+            model.Usuarios = usuarioDAO.Lista();
+            model.Movimentacoes = movimentacaoDAO.Busca(model);
+            return View(model);
         }
     }
 }

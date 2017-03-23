@@ -1,0 +1,66 @@
+﻿@model Financas.Models.BuscaMovimendacoesModel
+
+@using (Html.BeginForm("Busca", "Movimentacao", FormMethod.Post))
+{
+    <div class="row">
+        <fieldset>
+            <legend>Data Movimentação</legend>
+            <div class="col-sm-6">
+                @Html.LabelFor(m => m.DataMinima, "Minima")
+                @Html.TextBoxFor(m => m.DataMinima, new { @class="form-control"})
+            </div>
+            <div class="col-sm-6">
+                @Html.LabelFor(m => m.DataMaxima, "Maxima")
+                @Html.TextBoxFor(m => m.DataMaxima, new { @class = "form-control" })
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Valor</legend>
+            <div class="col-sm-6">
+                @Html.LabelFor(m => m.ValorMinimo, "Minimo")
+                @Html.TextBoxFor(m => m.ValorMinimo, new { @class = "form-control" })
+            </div>
+            <div class="col-sm-6">
+                @Html.LabelFor(m => m.ValorMaximo, "Maximo")
+                @Html.TextBoxFor(m => m.ValorMaximo, new { @class = "form-control" })
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Usuario e Tipo</legend>
+            <div class="col-sm-6">
+                @Html.LabelFor(m => m.Tipo, "Tipo")
+                @Html.EnumDropDownListFor(m => m.Tipo, new { @class = "form-control" })
+            </div>
+            <div class="col-sm-6">
+                @Html.LabelFor(m => m.UsuarioId, "Usuario")
+                @Html.DropDownListFor(m => m.UsuarioId, new SelectList(Model.Usuarios, "Id", "Nome", "Selectione"))
+            </div>
+        </fieldset>
+    </div>
+    
+
+    <input type="submit" value="Buscar" />
+
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Tipo</th>
+            <th>Valor</th>
+            <th>data</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model.Movimentacoes)
+        {
+            <tr>
+                <td>@m.Usuario.Nome</td>
+                <td>@m.Tipo</td>
+                <td>@m.Valor</td>
+                <td>@m.Data</td>
+            </tr>
+        }
+    </tbody>
+</table>
